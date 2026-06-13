@@ -480,6 +480,23 @@ body {
   }
 }
 
+/* RESPONSIVE DESIGN - TABLET */
+@media (max-width: 586px) {
+  .cards-container {
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+}
+
+
+
 /* RESPONSIVE DESIGN - MOBILE */
 @media (max-width: 480px) {
   #head {
@@ -588,4 +605,8 @@ body {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+#info {
+  font-family: 'Courier New', Courier, monospace;
 }

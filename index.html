@@ -34,7 +34,7 @@
       <h3>About Me</h3>
       <div class="about-content">
         <img src="images/myself.jpg" alt="myself" id="me" />
-        <p>
+        <p id="info">
           Hi My Name is Cassyboi i'm an aspiring web developer who is passionate
           about building websites that are scalable for businesses i am also
           interested in learning new technologies to help broaden my knowledge
@@ -114,10 +114,25 @@
     <section id="contact">
       <h3>Get In Touch</h3>
       <div class="contact-container">
-        <form class="contact-form">
-          <input type="text" placeholder="Your Name" required />
-          <input type="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" rows="5" required></textarea>
+        <form
+          class="contact-form"
+          method="POST"
+          action="https://formspree.io/f/mkoapdby"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Submission from Your Portfolio"
+          />
+          <input type="hidden" name="_replyto" />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
         <div class="contact-info">
